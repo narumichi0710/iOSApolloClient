@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "apollo": "^2.34.0",
+    "global": "^4.4.0",
+    "graphql": "^16.8.1"
+  }
+}
