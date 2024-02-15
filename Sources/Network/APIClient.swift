@@ -16,7 +16,11 @@ public class APIClient {
         let client = URLSessionClient()
         let provider = DefaultInterceptorProvider(client: client, store: store)
         let url = URL(string: "https://api.github.com/graphql")!
-        let token = "add your github api token"
+        
+        guard let token = ProcessInfo.processInfo.environment["GITHUB_API_TOKEN"] else {
+            fatalError("GitHub API token not found in environment variables")
+        }
+
         let transport = RequestChainNetworkTransport(
             interceptorProvider: provider,
             endpointURL: url,
