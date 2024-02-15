@@ -16,6 +16,7 @@
 		38CB3F942B7D093200E48B81 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 38CB3F932B7D093200E48B81 /* ApolloAPI */; };
 		38CB3F962B7D093200E48B81 /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 38CB3F952B7D093200E48B81 /* ApolloSQLite */; };
 		38CB3F982B7D093200E48B81 /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 38CB3F972B7D093200E48B81 /* ApolloTestSupport */; };
+		38CB3FBC2B7DCD5400E48B81 /* API in Resources */ = {isa = PBXBuildFile; fileRef = 38CB3FBB2B7DCD5400E48B81 /* API */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		38CB3F822B7D06DC00E48B81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		38CB3F842B7D06DE00E48B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38CB3F872B7D06DE00E48B81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		38CB3FBB2B7DCD5400E48B81 /* API */ = {isa = PBXFileReference; lastKnownFileType = folder; path = API; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 		38CB3F742B7D06DC00E48B81 = {
 			isa = PBXGroup;
 			children = (
+				38CB3FBB2B7DCD5400E48B81 /* API */,
 				38CB3F7F2B7D06DC00E48B81 /* iOSApolloClient */,
 				38CB3F7E2B7D06DC00E48B81 /* Products */,
 			);
@@ -145,6 +148,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38CB3FBC2B7DCD5400E48B81 /* API in Resources */,
 				38CB3F882B7D06DE00E48B81 /* Preview Assets.xcassets in Resources */,
 				38CB3F852B7D06DE00E48B81 /* Assets.xcassets in Resources */,
 			);
