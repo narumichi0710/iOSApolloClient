@@ -1,11 +1,11 @@
 {
-  "schemaNamespace" : "API",
+  "schemaNamespace" : "GithubAPI",
   "input" : {
     "operationSearchPaths" : [
       "**/*.graphql"
     ],
     "schemaSearchPaths" : [
-        "./schema.json"
+      "./schema.json"
     ]
   },
   "output" : {
@@ -14,9 +14,11 @@
       }
     },
     "schemaTypes" : {
-      "path" : "./API",
+      "path" : "./Sources/GithubAPI",
       "moduleType" : {
-        "swiftPackageManager" : {
+        "embeddedInTarget" : {
+          "name" : "GithubAPI",
+          "accessModifier": "public"
         }
       }
     },

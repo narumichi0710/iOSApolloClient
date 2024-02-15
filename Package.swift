@@ -10,6 +10,12 @@ let package = Package(
         .library(
             name: "AppFeature",
             targets: ["AppFeature"]),
+        .library(
+            name: "Network",
+            targets: ["Network"]),
+        .library(
+            name: "GithubAPI",
+            targets: ["GithubAPI"]),
     ],
     dependencies: [
         .package(
@@ -18,7 +24,9 @@ let package = Package(
         ),
     ],
     targets: [
-        .target(name: "AppFeature", dependencies: [
+        .target(name: "AppFeature", dependencies: ["Network"]),
+        .target(name: "Network", dependencies: ["GithubAPI"]),
+        .target(name: "GithubAPI", dependencies: [
             .product(name: "Apollo", package: "apollo-ios"),
         ]),
     ]
