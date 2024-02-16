@@ -1,6 +1,5 @@
 import SwiftUI
 import Network
-import GithubAPI
 
 public struct ContentView: View {
     @State private var viewerName: String?
@@ -27,7 +26,7 @@ public struct ContentView: View {
     }
 
     private func loadData() {
-        APIClient.shared.apollo.fetch(query: GithubAPI.ShowViewerQuery()) { result in
+        APIClient.shared.apollo.fetch(query: GraphQL.ShowViewerQuery()) { result in
             switch result {
             case .success(let graphQLResult):
                 if let viewer = graphQLResult.data?.viewer {

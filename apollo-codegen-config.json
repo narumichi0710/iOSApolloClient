@@ -1,5 +1,5 @@
 {
-  "schemaNamespace" : "GithubAPI",
+  "schemaNamespace" : "GraphQL",
   "input" : {
     "operationSearchPaths" : [
       "**/*.graphql"
@@ -14,10 +14,10 @@
       }
     },
     "schemaTypes" : {
-      "path" : "./Sources/GithubAPI",
+      "path" : "./Sources/NetWork/GeneratedCode",
       "moduleType" : {
         "embeddedInTarget" : {
-          "name" : "GithubAPI",
+          "name" : "Network",
           "accessModifier": "public"
         }
       }
